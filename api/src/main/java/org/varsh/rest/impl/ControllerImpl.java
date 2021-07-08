@@ -93,5 +93,18 @@ public class ControllerImpl {
         return responseData;
     }
 
+    @PostMapping(value= "/v1/deleteUserSlot")
+    @ResponseBody
+    public ResponseEntity deleteUserSlot(@RequestBody String data) throws Exception {
+        String response = null;
+        ResponseEntity responseData = null;
+        try {
+            response = coreImpl.deleteUserSlot(data);
+        }catch(Exception e){
+            responseData = apiUtil.constructError(Constants.deleteUserSlot,e);
+        }
+        responseData = responseData!=null?responseData:ResponseEntity.ok(response);
+        return responseData;
+    }
 
 }

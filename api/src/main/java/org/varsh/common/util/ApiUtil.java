@@ -42,7 +42,7 @@ public class ApiUtil {
         return value;
     }
 
-    public static List<Map<String, Object>> generateMapFromJsonList(String jsonString) throws Exception {
+    public static List<Map<String, Object>> generateListFromJsonString(String jsonString) throws Exception {
         ObjectMapper mapper = new ObjectMapper();
         List<Map<String, Object>> finalList = null;
         try {
