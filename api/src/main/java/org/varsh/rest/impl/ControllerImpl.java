@@ -107,4 +107,18 @@ public class ControllerImpl {
         return responseData;
     }
 
+    @GetMapping(value= "/v1/getAdoptPupDetails")
+    @ResponseBody
+    public ResponseEntity getAdoptPupDetails() throws Exception {
+        List<Map<String,Object>> response = null;
+        ResponseEntity responseData = null;
+        try {
+            response = coreImpl.getAdoptPupDetails();
+        }catch(Exception e){
+            responseData = apiUtil.constructError(Constants.getAdoptPupDetails,e);
+        }
+        responseData = responseData!=null?responseData:ResponseEntity.ok(response);
+        return responseData;
+    }
+
 }

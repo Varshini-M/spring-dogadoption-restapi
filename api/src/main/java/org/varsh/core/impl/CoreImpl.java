@@ -56,6 +56,7 @@ public class CoreImpl {
     }
 
     public String updateSlotsAndUser(String data) throws Exception {
+        
         byte[] jsonFile = Files.readAllBytes(Paths.get("C:\\Varshini\\workspace\\UI\\test-api\\slotsJson"));
         byte[] userSlotJsonFile = Files.readAllBytes(Paths.get("C:\\Varshini\\workspace\\UI\\test-api\\userSlotJson"));
         byte[] userJsonFile = Files.readAllBytes(Paths.get("C:\\Varshini\\workspace\\UI\\test-api\\userJson"));
@@ -111,5 +112,11 @@ public class CoreImpl {
             Files.write(Paths.get("C:\\Varshini\\workspace\\UI\\test-api\\userJson"), apiUtil.listToJson(userJson).getBytes());
         }
         return apiUtil.mapToJson(requestMap);
+    }
+
+    public List<Map<String, Object>> getAdoptPupDetails() throws Exception {
+        byte[] jsonFile = Files.readAllBytes(Paths.get("C:\\Varshini\\workspace\\UI\\test-api\\adoptDogDetailsJson"));
+        String slotsJson = new String(jsonFile);
+        return apiUtil.generateListFromJsonString(slotsJson);
     }
 }

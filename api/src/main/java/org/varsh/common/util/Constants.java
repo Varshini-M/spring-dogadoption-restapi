@@ -9,4 +9,5 @@ public class Constants {
     public static final String getSlots = "EC_003";
     public static final String updateSlotsAndUser = "EC_004";
     public static final String deleteUserSlot = "EC_005";
+    public static final String getAdoptPupDetails = "EC_006";
 }
