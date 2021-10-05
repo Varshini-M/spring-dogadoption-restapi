@@ -3,7 +3,6 @@ package org.varsh.rest.impl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.multipart.MultipartFile;
 import org.varsh.common.util.ApiUtil;
 import org.varsh.common.util.Constants;
 import org.varsh.core.impl.CoreImpl;
@@ -116,6 +115,20 @@ public class ControllerImpl {
             response = coreImpl.getAdoptPupDetails();
         }catch(Exception e){
             responseData = apiUtil.constructError(Constants.getAdoptPupDetails,e);
+        }
+        responseData = responseData!=null?responseData:ResponseEntity.ok(response);
+        return responseData;
+    }
+
+    @GetMapping(value= "/v1/getShoppingDetails")
+    @ResponseBody
+    public ResponseEntity getShoppingDetails() throws Exception {
+        List<Map<String,Object>> response = null;
+        ResponseEntity responseData = null;
+        try {
+            response = coreImpl.getShoppingDetails();
+        }catch(Exception e){
+            responseData = apiUtil.constructError(Constants.getShoppingDetails,e);
         }
         responseData = responseData!=null?responseData:ResponseEntity.ok(response);
         return responseData;

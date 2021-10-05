@@ -27,7 +27,7 @@
 		"id":"4",
 		"name":"Stella",
 		"description":"Stella is a creamwhite lab. She is 5 weeks old. She fell into a pit and was recovered. Show her your love!",
-		"vaccinated":"false",
+		"vaccinated":"true",
 		"pottyTrained":"false",
 		"image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEx3eRVgULbqpHgOoQNIQ7uSFfQisgAAZ2Ew&usqp=CAU"
 	},

@@ -1,0 +1,66 @@
+[
+	{
+		"id":"2001",
+		"name":"Vet Membership",
+		"description":"To avail the exclusive benefits of consultation offers valid for a year",
+		"price":"500",
+		"measure":"1",
+		"image":"https://resources.thrivevet.com/wp-content/uploads/2019/03/10k-strong.png"
+	},
+	{
+		"id":"3001",
+		"name":"Pedigree Puppy",
+		"description":"Keep your puppy healthy ! Dr recommended food for all puppies",
+		"price":"350",
+		"measure":"1.5 Kg",
+		"image":"https://www.pedigree.com/images/default-source/products/dry/pedigree-dry-dog-food-puppy-chicken-vegetable-flavor-front.tmb-.jpg?sfvrsn=6b3f6349_0"
+	},
+	{
+		"id":"3002",
+		"name":"RoyalCanin Puppy",
+		"description":"Keep your puppy healthy ! Dr recommended food for all puppies",
+		"price":"1500",
+		"measure":"10 Kg",
+		"image":"https://rukminim1.flixcart.com/image/416/416/jvv9zm80/pet-food/j/7/f/8-0-dog-3182550793049-royal-canin-original-imaf8yuhbhgc3bjg.jpeg?q=70"
+	},
+	{
+		"id":"3003",
+		"name":"Drools Puppy",
+		"description":"Keep your puppy healthy ! Dr recommended food for all puppies",
+		"price":"450",
+		"measure":"3 Kg",
+		"image":"https://sniffynose.com/wp-content/uploads/2020/11/61Ac0cwttYL._SL1200_.jpg"
+	},
+	{
+		"id":"3004",
+		"name":"Pedigree Adults",
+		"description":"Keep your dog healthy ! Dr recommended food for all the dogs",
+		"price":"500",
+		"measure":"6Kg",
+		"image":"http://www.petsworld.in/blog/wp-content/uploads/2014/06/pedigree-dog-food.jpg"
+	},
+	{
+		"id":"3005",
+		"name":"HomeMade Treat",
+		"description":"All our pups love the treat. Train your puppies with yasty treats",
+		"price":"250",
+		"measure":"1 kg",
+		"image":"https://www.eatingbirdfood.com/wp-content/uploads/2021/05/peanut-butter-dog-treats-overhead-close-up.jpg"
+	},
+	{
+		"id":"3006",
+		"name":"Chicken Rings",
+		"description":"All our pups love the treat. Train your pup with exciting treats!",
+		"price":"150",
+		"measure":"70 g",
+		"image":"https://www.pupkart.com/Products/pet-Dog/Foods-and-Treats/pupProducts/pr3494_1_small.jpg"
+	},
+	{
+		"id":"3007",
+		"name":"Calcium Bone",
+		"description":"All our pups love the treat. Train your pup with exciting treats!",
+		"price":"480",
+		"measure":"500 g",
+		"image":"https://images-eu.ssl-images-amazon.com/images/I/419hUdKbGAL.jpg"
+	}
+]
