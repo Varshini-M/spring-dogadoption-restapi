@@ -33,32 +33,32 @@ public class CoreImpl {
     }
 
     public List<Map<String, Object>> getJsonList() throws Exception {
-        byte[] jsonFile = Files.readAllBytes(Paths.get("C:\\Varshini\\workspace\\UI\\test-api\\json"));
+        byte[] jsonFile = Files.readAllBytes(Paths.get("C:\\Varsh\\workspace\\spring-dogadoption-restapi\\api\\src\\main\\resources\\json"));
         List<Map<String, Object>> list = ApiUtil.generateListFromJsonString(new String(jsonFile));
         return list;
     }
 
     public String updateContactDetails(String metaData) throws Exception {
-        byte[] jsonFile = Files.readAllBytes(Paths.get("C:\\Varshini\\workspace\\UI\\test-api\\contactJson"));
+        byte[] jsonFile = Files.readAllBytes(Paths.get("C:\\Varsh\\workspace\\spring-dogadoption-restapi\\api\\src\\main\\resources\\contactJson"));
         String contactJson = new String(jsonFile);
         List contactList = apiUtil.generateListFromJsonString(contactJson);
         contactList.add(apiUtil.generateMapFromJsonString(metaData));
-        Files.write(Paths.get("C:\\Varshini\\workspace\\UI\\test-api\\contactJson"), apiUtil.listToJson(contactList).getBytes());
+        Files.write(Paths.get("C:\\Varsh\\workspace\\spring-dogadoption-restapi\\api\\src\\main\\resources\\contactJson"), apiUtil.listToJson(contactList).getBytes());
         Map<String, String> response = new HashMap<>();
         response.put("success", "true");
         return apiUtil.mapToJson(response);
     }
 
     public Map<String, String> getSlots() throws Exception {
-        byte[] jsonFile = Files.readAllBytes(Paths.get("C:\\Varshini\\workspace\\UI\\test-api\\slotsJson"));
+        byte[] jsonFile = Files.readAllBytes(Paths.get("C:\\Varsh\\workspace\\spring-dogadoption-restapi\\api\\src\\main\\resources\\slotsJson"));
         String slotsJson = new String(jsonFile);
         return apiUtil.generateMapFromJsonString(slotsJson);
     }
 
     public String updateSlotsAndUser(String data) throws Exception {
-        byte[] jsonFile = Files.readAllBytes(Paths.get("C:\\Varshini\\workspace\\UI\\test-api\\slotsJson"));
-        byte[] userSlotJsonFile = Files.readAllBytes(Paths.get("C:\\Varshini\\workspace\\UI\\test-api\\userSlotJson"));
-        byte[] userJsonFile = Files.readAllBytes(Paths.get("C:\\Varshini\\workspace\\UI\\test-api\\userJson"));
+        byte[] jsonFile = Files.readAllBytes(Paths.get("C:\\Varsh\\workspace\\spring-dogadoption-restapi\\api\\src\\main\\resources\\slotsJson"));
+        byte[] userSlotJsonFile = Files.readAllBytes(Paths.get("C:\\Varsh\\workspace\\spring-dogadoption-restapi\\api\\src\\main\\resources\\userSlotJson"));
+        byte[] userJsonFile = Files.readAllBytes(Paths.get("C:\\Varsh\\workspace\\spring-dogadoption-restapi\\api\\src\\main\\resources\\userJson"));
         String slotsJson = new String(jsonFile);
         Map<String, String> slotMap = apiUtil.generateMapFromJsonString(slotsJson);
         Map<String, String> requestMap = apiUtil.generateMapFromJsonString(data);
@@ -72,11 +72,11 @@ public class CoreImpl {
             requestMap.put("existingUser", "false");
             int slots = Integer.parseInt(slotMap.get(requestMap.get("slot")));
             slotMap.put(requestMap.get("slot"), slots + 1 + "");
-            Files.write(Paths.get("C:\\Varshini\\workspace\\UI\\test-api\\slotsJson"), apiUtil.mapToJson(slotMap).getBytes());
-            Files.write(Paths.get("C:\\Varshini\\workspace\\UI\\test-api\\userSlotJson"), apiUtil.listToJson(userSlotJson).getBytes());
+            Files.write(Paths.get("C:\\Varsh\\workspace\\spring-dogadoption-restapi\\api\\src\\main\\resources\\slotsJson"), apiUtil.mapToJson(slotMap).getBytes());
+            Files.write(Paths.get("C:\\Varsh\\workspace\\spring-dogadoption-restapi\\api\\src\\main\\resources\\userSlotJson"), apiUtil.listToJson(userSlotJson).getBytes());
             userSlotMap.remove("slot");
             userJson.add(userSlotMap);
-            Files.write(Paths.get("C:\\Varshini\\workspace\\UI\\test-api\\userJson"), apiUtil.listToJson(userJson).getBytes());
+            Files.write(Paths.get("C:\\Varsh\\workspace\\spring-dogadoption-restapi\\api\\src\\main\\resources\\userJson"), apiUtil.listToJson(userJson).getBytes());
         } else {
             requestMap.put("existingUser", "true");
         }
@@ -84,9 +84,9 @@ public class CoreImpl {
     }
 
     public String deleteUserSlot(String data) throws Exception {
-        byte[] jsonFile = Files.readAllBytes(Paths.get("C:\\Varshini\\workspace\\UI\\test-api\\slotsJson"));
-        byte[] userSlotJsonFile = Files.readAllBytes(Paths.get("C:\\Varshini\\workspace\\UI\\test-api\\userSlotJson"));
-        byte[] userJsonFile = Files.readAllBytes(Paths.get("C:\\Varshini\\workspace\\UI\\test-api\\userJson"));
+        byte[] jsonFile = Files.readAllBytes(Paths.get("C:\\Varsh\\workspace\\spring-dogadoption-restapi\\api\\src\\main\\resources\\slotsJson"));
+        byte[] userSlotJsonFile = Files.readAllBytes(Paths.get("C:\\Varsh\\workspace\\spring-dogadoption-restapi\\api\\src\\main\\resources\\userSlotJson"));
+        byte[] userJsonFile = Files.readAllBytes(Paths.get("C:\\Varsh\\workspace\\spring-dogadoption-restapi\\api\\src\\main\\resources\\userJson"));
         String slotsJson = new String(jsonFile);
         Map<String, String> slotMap = apiUtil.generateMapFromJsonString(slotsJson);
         Map<String, String> requestMap = apiUtil.generateMapFromJsonString(data);
@@ -104,23 +104,23 @@ public class CoreImpl {
             userSlotJson.remove(userSlotMap);
             int slots = Integer.parseInt(slotMap.get(userSlotMap.get("slot")));
             slotMap.put(userSlotMap.get("slot"), slots - 1 + "");
-            Files.write(Paths.get("C:\\Varshini\\workspace\\UI\\test-api\\slotsJson"), apiUtil.mapToJson(slotMap).getBytes());
-            Files.write(Paths.get("C:\\Varshini\\workspace\\UI\\test-api\\userSlotJson"), apiUtil.listToJson((List) userSlotJson).getBytes());
+            Files.write(Paths.get("C:\\Varsh\\workspace\\spring-dogadoption-restapi\\api\\src\\main\\resources\\slotsJson"), apiUtil.mapToJson(slotMap).getBytes());
+            Files.write(Paths.get("C:\\Varsh\\workspace\\spring-dogadoption-restapi\\api\\src\\main\\resources\\userSlotJson"), apiUtil.listToJson((List) userSlotJson).getBytes());
             userSlotMap.remove("slot");
             userJson.remove(userSlotMap);
-            Files.write(Paths.get("C:\\Varshini\\workspace\\UI\\test-api\\userJson"), apiUtil.listToJson(userJson).getBytes());
+            Files.write(Paths.get("C:\\Varsh\\workspace\\spring-dogadoption-restapi\\api\\src\\main\\resources\\userJson"), apiUtil.listToJson(userJson).getBytes());
         }
         return apiUtil.mapToJson(requestMap);
     }
 
     public List<Map<String, Object>> getAdoptPupDetails() throws Exception {
-        byte[] jsonFile = Files.readAllBytes(Paths.get("C:\\Varshini\\workspace\\UI\\test-api\\adoptDogDetailsJson"));
+        byte[] jsonFile = Files.readAllBytes(Paths.get("C:\\Varsh\\workspace\\spring-dogadoption-restapi\\api\\src\\main\\resources\\adoptDogDetailsJson"));
         String slotsJson = new String(jsonFile);
         return apiUtil.generateListFromJsonString(slotsJson);
     }
 
     public List<Map<String, Object>> getShoppingDetails() throws Exception {
-        byte[] jsonFile = Files.readAllBytes(Paths.get("C:\\Varshini\\workspace\\UI\\test-api\\shoppingDetailsJson"));
+        byte[] jsonFile = Files.readAllBytes(Paths.get("C:\\Varsh\\workspace\\spring-dogadoption-restapi\\api\\src\\main\\resources\\shoppingDetailsJson"));
         String slotsJson = new String(jsonFile);
         return apiUtil.generateListFromJsonString(slotsJson);
     }
