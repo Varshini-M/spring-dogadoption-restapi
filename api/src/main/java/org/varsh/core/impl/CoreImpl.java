@@ -17,6 +17,11 @@ public class CoreImpl {
     @Autowired
     private ApiUtil apiUtil;
 
+    /**
+     * Methos to return dummy json data
+     * @return String
+     * @throws Exception
+     */
     public String getJson() throws Exception {
         List<Map<String, String>> list = new ArrayList<>();
         Map<String, String> jsonMap = new HashMap<>();
@@ -32,12 +37,23 @@ public class CoreImpl {
         return apiUtil.listToJson(list);
     }
 
+    /**
+     * Method to get snippet json
+     * @return List<Map<String, Object>>
+     * @throws Exception
+     */
     public List<Map<String, Object>> getJsonList() throws Exception {
         byte[] jsonFile = Files.readAllBytes(Paths.get("C:\\Varsh\\workspace\\spring-dogadoption-restapi\\api\\src\\main\\resources\\json"));
         List<Map<String, Object>> list = ApiUtil.generateListFromJsonString(new String(jsonFile));
         return list;
     }
 
+    /**
+     * Method to update contact details
+     * @param metaData
+     * @return String
+     * @throws Exception
+     */
     public String updateContactDetails(String metaData) throws Exception {
         byte[] jsonFile = Files.readAllBytes(Paths.get("C:\\Varsh\\workspace\\spring-dogadoption-restapi\\api\\src\\main\\resources\\contactJson"));
         String contactJson = new String(jsonFile);
@@ -49,12 +65,23 @@ public class CoreImpl {
         return apiUtil.mapToJson(response);
     }
 
+    /**
+     * Method to get slots json
+     * @return Map<String, String>
+     * @throws Exception
+     */
     public Map<String, String> getSlots() throws Exception {
         byte[] jsonFile = Files.readAllBytes(Paths.get("C:\\Varsh\\workspace\\spring-dogadoption-restapi\\api\\src\\main\\resources\\slotsJson"));
         String slotsJson = new String(jsonFile);
         return apiUtil.generateMapFromJsonString(slotsJson);
     }
 
+    /**
+     * Method to update slots and user and return if its existing user
+     * @param data
+     * @return String
+     * @throws Exception
+     */
     public String updateSlotsAndUser(String data) throws Exception {
         byte[] jsonFile = Files.readAllBytes(Paths.get("C:\\Varsh\\workspace\\spring-dogadoption-restapi\\api\\src\\main\\resources\\slotsJson"));
         byte[] userSlotJsonFile = Files.readAllBytes(Paths.get("C:\\Varsh\\workspace\\spring-dogadoption-restapi\\api\\src\\main\\resources\\userSlotJson"));
@@ -83,6 +110,12 @@ public class CoreImpl {
         return apiUtil.mapToJson(requestMap);
     }
 
+    /**
+     * Method to delete user slot
+     * @param data
+     * @return String
+     * @throws Exception
+     */
     public String deleteUserSlot(String data) throws Exception {
         byte[] jsonFile = Files.readAllBytes(Paths.get("C:\\Varsh\\workspace\\spring-dogadoption-restapi\\api\\src\\main\\resources\\slotsJson"));
         byte[] userSlotJsonFile = Files.readAllBytes(Paths.get("C:\\Varsh\\workspace\\spring-dogadoption-restapi\\api\\src\\main\\resources\\userSlotJson"));
@@ -113,12 +146,22 @@ public class CoreImpl {
         return apiUtil.mapToJson(requestMap);
     }
 
+    /**
+     * Method to get adopt pup details json
+     * @return List<Map<String, Object>>
+     * @throws Exception
+     */
     public List<Map<String, Object>> getAdoptPupDetails() throws Exception {
         byte[] jsonFile = Files.readAllBytes(Paths.get("C:\\Varsh\\workspace\\spring-dogadoption-restapi\\api\\src\\main\\resources\\adoptDogDetailsJson"));
         String slotsJson = new String(jsonFile);
         return apiUtil.generateListFromJsonString(slotsJson);
     }
 
+    /**
+     * Method to get shopping details json
+     * @return List<Map<String, Object>>
+     * @throws Exception
+     */
     public List<Map<String, Object>> getShoppingDetails() throws Exception {
         byte[] jsonFile = Files.readAllBytes(Paths.get("C:\\Varsh\\workspace\\spring-dogadoption-restapi\\api\\src\\main\\resources\\shoppingDetailsJson"));
         String slotsJson = new String(jsonFile);

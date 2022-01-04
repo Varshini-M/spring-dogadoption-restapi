@@ -21,7 +21,11 @@ public class ControllerImpl {
     @Autowired
     private ApiUtil apiUtil;
 
-
+    /**
+     * Method to get dummy json
+     * @return ResponseEntity<String>
+     * @throws Exception
+     */
     @GetMapping(value = "/getJson")
     @ResponseBody
     public ResponseEntity getJson() throws Exception {
@@ -36,6 +40,11 @@ public class ControllerImpl {
         return responseData;
     }
 
+    /**
+     * Method to get json for snippets
+     * @return ResponseEntity<List<Map<String,Object>>>
+     * @throws Exception
+     */
     @GetMapping(value= "/v1/getJson")
     @ResponseBody
     public ResponseEntity getJsonList() throws Exception {
@@ -50,6 +59,12 @@ public class ControllerImpl {
         return responseData;
     }
 
+    /**
+     * Method to update contact details
+     * @param data
+     * @return ResponseEntity<String>
+     * @throws Exception
+     */
     @PostMapping(value= "/v1/updateContactDetails")
     @ResponseBody
     public ResponseEntity updateContactDetails(@RequestBody String data) throws Exception {
@@ -64,6 +79,11 @@ public class ControllerImpl {
         return responseData;
     }
 
+    /**
+     * Method to get slots
+     * @return ResponseEntity<Map<String, String>>
+     * @throws Exception
+     */
     @GetMapping(value= "/v1/getSlots")
     @ResponseBody
     public ResponseEntity getSlots() throws Exception {
@@ -78,6 +98,12 @@ public class ControllerImpl {
         return responseData;
     }
 
+    /**
+     * Method to update slots and user details
+     * @param data
+     * @return ResponseEntity<String>
+     * @throws Exception
+     */
     @PostMapping(value= "/v1/updateSlotsAndUser")
     @ResponseBody
     public ResponseEntity updateSlotsAndUser(@RequestBody String data) throws Exception {
@@ -92,6 +118,12 @@ public class ControllerImpl {
         return responseData;
     }
 
+    /**
+     * Method to delete user slot
+     * @param data
+     * @return ResponseEntity<String>
+     * @throws Exception
+     */
     @PostMapping(value= "/v1/deleteUserSlot")
     @ResponseBody
     public ResponseEntity deleteUserSlot(@RequestBody String data) throws Exception {
@@ -106,6 +138,11 @@ public class ControllerImpl {
         return responseData;
     }
 
+    /**
+     * Method to get adopt pup details
+     * @return ResponseEntity<List<Map<String, Object>>>
+     * @throws Exception
+     */
     @GetMapping(value= "/v1/getAdoptPupDetails")
     @ResponseBody
     public ResponseEntity getAdoptPupDetails() throws Exception {
@@ -120,6 +157,11 @@ public class ControllerImpl {
         return responseData;
     }
 
+    /**
+     * Method to get Shopping details.
+     * @return ResponseEntity<List<Map<String,Object>>>
+     * @throws Exception
+     */
     @GetMapping(value= "/v1/getShoppingDetails")
     @ResponseBody
     public ResponseEntity getShoppingDetails() throws Exception {
