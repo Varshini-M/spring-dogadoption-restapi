@@ -5,7 +5,7 @@
 		"description":"To avail the exclusive benefits of consultation offers valid for a year",
 		"price":"500",
 		"measure":"1",
-		"image":"https://resources.thrivevet.com/wp-content/uploads/2019/03/10k-strong.png"
+		"image":"Vetmembership.jpg"
 	},
 	{
 		"id":"3001",
@@ -13,7 +13,7 @@
 		"description":"Keep your puppy healthy ! Dr recommended food for all puppies",
 		"price":"350",
 		"measure":"1.5 Kg",
-		"image":"https://www.pedigree.com/images/default-source/products/dry/pedigree-dry-dog-food-puppy-chicken-vegetable-flavor-front.tmb-.jpg?sfvrsn=6b3f6349_0"
+		"image":"Pedigreepuppy.jpg"
 	},
 	{
 		"id":"3002",
@@ -21,7 +21,7 @@
 		"description":"Keep your puppy healthy ! Dr recommended food for all puppies",
 		"price":"1500",
 		"measure":"10 Kg",
-		"image":"https://rukminim1.flixcart.com/image/416/416/jvv9zm80/pet-food/j/7/f/8-0-dog-3182550793049-royal-canin-original-imaf8yuhbhgc3bjg.jpeg?q=70"
+		"image":"Royalcanninpuppy.jpeg"
 	},
 	{
 		"id":"3003",
@@ -29,7 +29,7 @@
 		"description":"Keep your puppy healthy ! Dr recommended food for all puppies",
 		"price":"450",
 		"measure":"3 Kg",
-		"image":"https://sniffynose.com/wp-content/uploads/2020/11/61Ac0cwttYL._SL1200_.jpg"
+		"image":"Droolspuppy.jpg"
 	},
 	{
 		"id":"3004",
@@ -37,7 +37,7 @@
 		"description":"Keep your dog healthy ! Dr recommended food for all the dogs",
 		"price":"500",
 		"measure":"6Kg",
-		"image":"http://www.petsworld.in/blog/wp-content/uploads/2014/06/pedigree-dog-food.jpg"
+		"image":"Pedigreeadult.jpg"
 	},
 	{
 		"id":"3005",
@@ -45,7 +45,7 @@
 		"description":"All our pups love the treat. Train your puppies with yasty treats",
 		"price":"250",
 		"measure":"1 kg",
-		"image":"https://www.eatingbirdfood.com/wp-content/uploads/2021/05/peanut-butter-dog-treats-overhead-close-up.jpg"
+		"image":"Homemadetreat.jpg"
 	},
 	{
 		"id":"3006",
@@ -53,7 +53,7 @@
 		"description":"All our pups love the treat. Train your pup with exciting treats!",
 		"price":"150",
 		"measure":"70 g",
-		"image":"https://www.pupkart.com/Products/pet-Dog/Foods-and-Treats/pupProducts/pr3494_1_small.jpg"
+		"image":"Chickenring.jpg"
 	},
 	{
 		"id":"3007",
@@ -61,6 +61,6 @@
 		"description":"All our pups love the treat. Train your pup with exciting treats!",
 		"price":"480",
 		"measure":"500 g",
-		"image":"https://images-eu.ssl-images-amazon.com/images/I/419hUdKbGAL.jpg"
+		"image":"Calciumbone.jpg"
 	}
 ]

@@ -5,7 +5,7 @@
 		"description":"Hooch is a black labrador retriever. He is 7 weeks old. He was abandoned on the streets. Show him your love!",
 		"vaccinated":"true",
 		"pottyTrained":"true",
-		"image":"https://nypost.com/wp-content/uploads/sites/2/2016/12/untitled-121.jpg?quality=80&strip=all&w=618&h=410&crop=1"
+		"image":"Hooch.jpg"
 	},
 	{
 		"id":"2",
@@ -13,7 +13,7 @@
 		"description":"Danny is a chocolate labrador retriever. He is 6 weeks old. He survived his grievest fears. Show him your love!",
 		"vaccinated":"true",
 		"pottyTrained":"false",
-		"image":"https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/popular-dog-names-buddy-1560526199.jpg"
+		"image":"Danny.jpg"
 	},	
 	{
 		"id":"3",
@@ -21,7 +21,7 @@
 		"description":"Daisy is a chihuahua. She is 10 months old. She separated from her beloved family. Show her your love!",
 		"vaccinated":"true",
 		"pottyTrained":"true",
-		"image":"https://cdn.winknews.com/wp-content/uploads/2020/10/MacKenzie-dog-hero.jpg"
+		"image":"Daisy.jpg"
 	},
 	{
 		"id":"4",
@@ -29,7 +29,7 @@
 		"description":"Stella is a creamwhite lab. She is 5 weeks old. She fell into a pit and was recovered. Show her your love!",
 		"vaccinated":"true",
 		"pottyTrained":"false",
-		"image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEx3eRVgULbqpHgOoQNIQ7uSFfQisgAAZ2Ew&usqp=CAU"
+		"image":"Stella.jfif"
 	},
 	{
 		"id":"5",
@@ -37,7 +37,7 @@
 		"description":"Bruno is a Cavalier King Charles Spaniel. He is 8 weeks old. He was attacked by fellow strays . Show him your love!",
 		"vaccinated":"true",
 		"pottyTrained":"true",
-		"image":"https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/popular-dog-names-cooper-1560526107.jpg?crop=1xw:0.9986996098829649xh;center,top&resize=480:*"
+		"image":"Bruno.jpg"
 	},
 	{
 		"id":"6",
@@ -45,7 +45,7 @@
 		"description":"Flynn is a Jack Russell Terrier. He is 1 year old. He is a survivor from an accident . Show him your love!",
 		"vaccinated":"true",
 		"pottyTrained":"true",
-		"image":"https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/best-dog-names-1615507587.png?crop=0.5xw:1xh;center,top&resize=640:*"
+		"image":"Flynn.png"
 	},
 	{
 		"id":"7",
@@ -53,7 +53,7 @@
 		"description":"Cooper is a German Shepherd. He is 4 weeks old. He was shivering in the cold unnoticed . Show him your love!",
 		"vaccinated":"true",
 		"pottyTrained":"false",
-		"image":"https://d17fnq9dkz9hgj.cloudfront.net/uploads/2020/04/shelter-dog-cropped-1-632x329.jpg"
+		"image":"Cooper.jpg"
 	},
 	{
 		"id":"8",
@@ -61,6 +61,22 @@
 		"description":"Katie is a Shi Tzu. She is 9 weeks old. She was starving from a stranded place . Show her your love!",
 		"vaccinated":"true",
 		"pottyTrained":"true",
-		"image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtRVY16K6KTLQ5gt7OFThORl0Ci1uqzPxPZQ&usqp=CAU"
+		"image":"Katie.jfif"
+	},
+	{
+		"id":"9",
+		"name":"Leslie",
+		"description":"Leslie is a GoldenDoodle. She is 12 weeks old. She was abandoned by her family during the pandemic . Show her your love!",
+		"vaccinated":"false",
+		"pottyTrained":"true",
+		"image":"Leslie.jpg"
+	},
+	{
+		"id":"10",
+		"name":"Miffy",
+		"description":"Miffy is a corgi. She is 10 weeks old. She battled covid and recovered back . Show her your love!",
+		"vaccinated":"true",
+		"pottyTrained":"true",
+		"image":"Miffy.webp"
 	}
 ]
